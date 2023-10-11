@@ -1,0 +1,23 @@
+@import "../../sass/_tokens.scss";
+
+#breadcrumb {
+    flex: 1;
+    height: auto;
+    margin: $size-1 0;
+    .list {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline;
+            color: $gray-200;
+            font-size: 14px;
+            &.element-active {
+                font-weight: bold;
+            }
+            img.icon-arrow-right {
+                margin: 0 5px;
+                width: 10px;
+            }
+        }
+    }
+}

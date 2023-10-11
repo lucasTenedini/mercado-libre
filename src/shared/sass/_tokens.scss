@@ -1,0 +1,26 @@
+//COLOR _tokens
+$yellow-primary: #ffe600;
+$black-primary: #333;
+$gray-100: #666;
+$gray-200: #999;
+$gray-300: #eeeeee;
+$gray-400: #dddddd;
+$gray-500: #f6f7f8;
+$gray-600: #e8e8e8;
+
+$size-1: 16px;
+$size-2: 32px;
+
+@mixin flex--center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+@mixin flex-column--center {
+    @include flex--center(column);
+}
+
+@mixin flex-row--center {
+    @include flex--center(row);
+}

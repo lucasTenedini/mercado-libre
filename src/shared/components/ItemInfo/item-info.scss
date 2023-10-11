@@ -1,0 +1,43 @@
+@import "../../sass/_tokens.scss";
+
+#item-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .address {
+    font-size: 12px;
+    color: $gray-100;
+    position: absolute;
+    right: 12%;
+    top: 60%;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 400;
+    color: $black-primary;
+  }
+
+  .price {
+    position: relative;
+    .shipping-icon {
+      justify-content: center;
+      width: 24px;
+      position: absolute;
+      padding: 5px 0 0 15px;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #item-info {
+    .address {
+      top: 90%;
+    }
+  }
+}

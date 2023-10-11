@@ -1,0 +1,53 @@
+@import "../../sass/_tokens.scss";
+
+.item-list {
+    flex: 1;
+    li {
+        list-style: none;
+        display: flex;
+        &:not(:last-child) {
+            border-bottom: 1px solid $gray-300;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .item-row a {
+        @include flex-row--center();
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .item-row a {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1025px) {
+    .item-row a {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+}
+
+.item-row {
+    &:first-child {
+        .img-container {
+            margin: 0 $size-1 $size-1 0;
+        }
+    }
+
+    &:not(:first-child):not(:last-child) {
+        .img-container {
+            margin: $size-1 $size-1 $size-1 0;
+        }
+    }
+
+    &:last-child {
+        .img-container {
+            margin: $size-1 $size-1 0 0;
+        }
+    }
+}

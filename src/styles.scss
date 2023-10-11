@@ -1,0 +1,44 @@
+@import "shared/sass/_tokens.scss";
+@import "shared/sass/_generic-cLasses.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $gray-300;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure,
+ol,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  height: 48px;
+  font-size: $size-1;
+
+  &-primary {
+    color: white;
+    background-color: #3483fa;
+  }
+}
+
+.text-bold {
+  font-weight: 500;
+}

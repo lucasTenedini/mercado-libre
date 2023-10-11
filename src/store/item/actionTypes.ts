@@ -1,0 +1,12 @@
+export const SEARCH_REQUEST = "SEARCH_REQUEST";
+export const SEARCH_SUCCESS = "SEARCH_SUCCESS";
+export const SEARCH_FAILURE = "SEARCH_FAILURE";
+
+export const ITEM_REQUEST = "ITEM_REQUEST";
+export const ITEM_SUCCESS = "ITEM_SUCCESS";
+export const ITEM_FAILURE = "ITEM_FAILURE";
+
+export const LOADING_VIEW = "LOADING_VIEW";
+export const RESET_QUERY = "RESET_QUERY";
+export const RESET_ITEM = "RESET_ITEM";
+export const RESET_SEARCH = "RESET_SEARCH";
